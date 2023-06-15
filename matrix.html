@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+      html {
+    background: black;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.encima{
+  display: flex;
+    /* margin-top: 20%; */
+    /* height: 100px; */
+    /* width: 100px; */
+    /* background-color: white; */
+    /* z-index: 1000!important; */
+    /* position: fixed; */
+    /* margin: 27% 35%; */
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+}
+#Matrix{
+  z-index: -100;
+    position: absolute;
+}
+
+.log-form {
+  margin-top: 14%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: white;
+opacity: 100%;
+width: 400px;
+height: 400px;
+box-shadow: 15px 15px lime;
+border: 5px solid lime;
+}
+.form-input {
+text-align: center;
+border-radius: 1rem;
+width: 210px;
+height: 25px;
+border: 2px solid lime;
+}
+#form-submit {
+border-radius: 1rem;
+height: 30px;
+width: 70px;
+border: 2px solid lime;
+background-color: white;
+}
+label,h1,p,#mostrar, #form-submit,
+.form-input {
+font-family: "Helvetica";
+color: lime;
+}
+#form-submit,
+.form-input,
+.container,
+.log-form {
+background-color: black;
+}
+#mostrar{
+  margin: 20px 50px;
+  font-size: 2em;
+}
+a{
+  color: lime;
+  text-decoration-line: none;
+  
+}
+
+    </style>
+    <title>Matrix digital rain</title>
+</head>
+<body>
+
+    <canvas id="Matrix"></canvas>
+    <div class="encima">
+      <div class='log-form'>
+        <form action=' '>
+        <h1>LOGIN</h1>
+        <p >Estoy tratando de liberar tu mente. Pero solo puedo mostrarte la puerta. Tú eres el que tiene que atravesar el código</p>
+        <br>
+        <label for='username'>USERNAME</label>
+        <input type='text' name='username' class='form-input' value="Trinity">
+        <label for='password'>PASSWORD</label>
+        <input type='password' name='password' id="password" class='form-input'>
+        <input type='submit' onclick="myFunction()" value='LOG IN' id='form-submit'>
+
+        </form>
+        
+        </div>
+
+    </div>
+    <div id="mostrar"></div>
+    <script src="app.js"></script>
+</body>
+</html>
